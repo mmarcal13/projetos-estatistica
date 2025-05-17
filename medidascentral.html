@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tendência Central</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Tendência Central</h1>
+
+    <form id="dataForm">
+        <label for="values">Insira os valores (separados por vírgula):</label><br>
+        <textarea id="values" name="values" rows="5" cols="50"></textarea><br><br>
+        <button type="button" onclick="calculate()">Calcular</button>
+    </form>
+
+    <div id="results" style="margin-top: 20px;">
+        <h2>Resultados:</h2>
+        <p>Média: <span id="mean"></span></p>
+        <p>Mediana: <span id="median"></span></p>
+        <p>Moda: <span id="mode"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
